@@ -45,5 +45,10 @@
     "*.{js,ts,jsx,tsx}": [
       "eslint --fix --ext .js,.jsx,.tsx,.ts, ."
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

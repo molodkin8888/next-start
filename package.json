@@ -10,7 +10,8 @@
     "lint:fix": "eslint --fix --ext .js,.jsx,.tsx,.ts, .",
     "prettier": "prettier --write",
     "prepare": "husky install",
-    "test": "echo 'No tests configured'"
+    "test": "echo 'No tests configured'",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@types/node": "20.6.2",
@@ -37,6 +38,12 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.0",
     "jest": "^29.7.0",
+    "lint-staged": "^14.0.1",
     "prettier": "^3.0.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix --ext .js,.jsx,.tsx,.ts, ."
+    ]
   }
 }

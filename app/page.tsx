@@ -1,9 +1,11 @@
 import Footer from '@/app/components/footer';
+import Header from '@/app/components/header';
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      <Header />
       <div
         className="hero min-h-screen"
         style={{

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Header() {
   return (
     <div className="navbar bg-base-100">
@@ -24,21 +26,21 @@ export default function Header() {
             tabIndex={0}
           >
             <li>
-              <a>Photo Library</a>
+              <Link href="/photos">Photo Library</Link>
             </li>
             <li>
               <a>More Details</a>
               <ul className="p-2">
                 <li>
-                  <a>Comments</a>
+                  <Link href="/comments">Comments</Link>
                 </li>
                 <li>
-                  <a>Todos</a>
+                  <Link href="/todos">Todos</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Users</a>
+              <Link href="/users">Users</Link>
             </li>
           </ul>
         </div>
@@ -47,23 +49,23 @@ export default function Header() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Photo Library</a>
+            <Link href="/photos">Photo Library</Link>
           </li>
           <li tabIndex={0}>
             <details>
               <summary>More Details</summary>
               <ul className="p-2">
                 <li>
-                  <a>Comments</a>
+                  <Link href="/comments">Comments</Link>
                 </li>
                 <li>
-                  <a>Todos</a>
+                  <Link href="/todos">Todos</Link>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <a>Users</a>
+            <Link href="/users">Users</Link>
           </li>
         </ul>
       </div>

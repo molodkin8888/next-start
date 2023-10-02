@@ -37,6 +37,9 @@ export default function Header() {
                 <li>
                   <Link href="/todos">Todos</Link>
                 </li>
+                <li>
+                  <Link href="/counter">Counter</Link>
+                </li>
               </ul>
             </li>
             <li>
@@ -60,6 +63,9 @@ export default function Header() {
                 </li>
                 <li>
                   <Link href="/todos">Todos</Link>
+                </li>
+                <li>
+                  <Link href="/counter">Counter</Link>
                 </li>
               </ul>
             </details>

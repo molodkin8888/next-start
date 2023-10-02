@@ -32,7 +32,7 @@ export default function Header() {
               <a>More Details</a>
               <ul className="p-2">
                 <li>
-                  <Link href="/comments">Comments</Link>
+                  <Link href="/posts">Posts</Link>
                 </li>
                 <li>
                   <Link href="/todos">Todos</Link>
@@ -56,7 +56,7 @@ export default function Header() {
               <summary>More Details</summary>
               <ul className="p-2">
                 <li>
-                  <Link href="/comments">Comments</Link>
+                  <Link href="/posts">Posts</Link>
                 </li>
                 <li>
                   <Link href="/todos">Todos</Link>

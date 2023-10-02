@@ -1,3 +1,4 @@
+import { GetServerSideProps } from 'next';
 import { NextPage } from 'next';
 import { fetchInstance } from '@/api/config';
 
@@ -19,7 +20,7 @@ const Post: NextPage<PostProps> = ({ post }) => {
 
 export default Post;
 
-export async function getServerSideProps(context) {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const { params } = context;
   const { postId } = params;
 
@@ -33,4 +34,4 @@ export async function getServerSideProps(context) {
       post,
     },
   };
-}
+};
